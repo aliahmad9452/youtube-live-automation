@@ -6,7 +6,7 @@ from datetime import datetime, timezone
 import isodate
 
 API_KEY = os.getenv("YT_API_KEY")  
-CHANNEL_ID = "UC2eKzfI-pVWYLPzb_oRZ1Wg"
+CHANNEL_ID = "UCMmpLL2ucRHAXbNHiCPyIyg"
 
 def get_latest_videos():
     url = f"https://www.googleapis.com/youtube/v3/search?key={API_KEY}&channelId={CHANNEL_ID}&part=snippet,id&order=date&maxResults=30"
