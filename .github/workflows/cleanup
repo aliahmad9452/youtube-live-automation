@@ -1,0 +1,27 @@
+cleanup:
+    needs: update
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Install GitHub CLI
+      run: sudo apt-get install gh -y
+
+    - name: Authenticate GitHub CLI
+      run: echo "${{ secrets.GH_TOKEN }}" | gh auth login --with-token
+
+    - name: Delete old workflow runs
+      run: |
+        REPO="${{ github.repository }}"
+        WORKFLOW_NAME="Update Playlist"
+        MAX_RUNS=5
+
+        echo "Fetching workflow ID for: $WORKFLOW_NAME"
+        WORKFLOW_ID=$(gh api repos/$REPO/actions/workflows | jq -r ".workflows[] | select(.name==\"$WORKFLOW_NAME\") | .id")
+
+        echo "Deleting old workflow runs for workflow ID $WORKFLOW_ID, keeping latest $MAX_RUNS"
+        RUN_IDS=$(gh api "repos/$REPO/actions/workflows/$WORKFLOW_ID/runs?per_page=100" | jq -r ".workflow_runs[] | .id" | tail -n +$((MAX_RUNS+1)))
+
+        for RUN_ID in $RUN_IDS; do
+          echo "Deleting run ID: $RUN_ID"
+          gh api -X DELETE repos/$REPO/actions/runs/$RUN_ID
+        done
