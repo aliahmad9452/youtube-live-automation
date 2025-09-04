@@ -1,7 +1,6 @@
 {
-  "last_updated": "2025-09-04T16:24:49.894423+00:00",
+  "last_updated": "2025-09-04T20:20:16.680417+00:00",
   "videos": [
-    "M1sbe6dxjbU",
     "pTBqdQSkm-g",
     "oVMGsptemKw",
     "GclZzQzR6QI",
@@ -30,10 +29,10 @@
     "FSZEgiGiAao",
     "vsY6IAhy59c",
     "TgD88cJL_KM",
-    "Q7NToQkyrgE"
+    "Q7NToQkyrgE",
+    "NVuTfwtJf-4"
   ],
   "durations": [
-    795,
     115,
     694,
     64,
@@ -62,8 +61,9 @@
     634,
     47,
     1116,
-    100
+    100,
+    324
   ],
-  "total_duration": 9725,
-  "current_position": 6789
+  "total_duration": 9254,
+  "current_position": 6506
 }
