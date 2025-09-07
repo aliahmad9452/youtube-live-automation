@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-09-07T08:21:40.338877+00:00",
+  "last_updated": "2025-09-07T12:35:29.093133+00:00",
   "videos": [
     "M1sbe6dxjbU",
     "pTBqdQSkm-g",
@@ -19,10 +19,7 @@
     "i12nt8CDvBg",
     "-CwMkV8FpzY",
     "m3HimYnC8tA",
-    "3lq-KSfDxmI",
     "fps_awL1ISM",
-    "KxOv_gvQCyM",
-    "FUY63-CuIzg",
     "meUVSU8t4Ck",
     "7zXHlZMhAXg",
     "FMhXpYPi6Xs",
@@ -30,7 +27,10 @@
     "FSZEgiGiAao",
     "vsY6IAhy59c",
     "TgD88cJL_KM",
-    "Q7NToQkyrgE"
+    "Q7NToQkyrgE",
+    "NVuTfwtJf-4",
+    "QqKOUCb16O4",
+    "FFZ6qjERHK4"
   ],
   "durations": [
     795,
@@ -51,10 +51,7 @@
     97,
     780,
     87,
-    199,
     1143,
-    130,
-    302,
     89,
     610,
     104,
@@ -62,8 +59,11 @@
     634,
     47,
     1116,
-    100
+    100,
+    324,
+    89,
+    121
   ],
-  "total_duration": 9725,
-  "current_position": 3600
+  "total_duration": 9628,
+  "current_position": 3737
 }
